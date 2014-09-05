@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31A4F7C219B982D8009E5D10 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A4F7C119B982D8009E5D10 /* NewsViewController.swift */; };
+		31A4F7C419B98838009E5D10 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A4F7C319B98838009E5D10 /* FeedViewController.swift */; };
+		31A4F7C619B98849009E5D10 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A4F7C519B98849009E5D10 /* MessagesViewController.swift */; };
+		31A4F7C819B98856009E5D10 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A4F7C719B98856009E5D10 /* MoreViewController.swift */; };
+		31A4F7CA19B98863009E5D10 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A4F7C919B98863009E5D10 /* RequestsViewController.swift */; };
+		31A4F7CC19B9887A009E5D10 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A4F7CB19B9887A009E5D10 /* NotificationsViewController.swift */; };
 		31FA7CD519B97E3900582E07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FA7CD419B97E3900582E07 /* Foundation.framework */; };
 		31FA7CD719B97E3900582E07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FA7CD619B97E3900582E07 /* CoreGraphics.framework */; };
 		31FA7CD919B97E3900582E07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FA7CD819B97E3900582E07 /* UIKit.framework */; };
@@ -36,7 +40,11 @@
 
 /* Begin PBXFileReference section */
 		31A4F7BE19B982B6009E5D10 /* facebook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "facebook-Bridging-Header.h"; sourceTree = "<group>"; };
-		31A4F7C119B982D8009E5D10 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		31A4F7C319B98838009E5D10 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		31A4F7C519B98849009E5D10 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		31A4F7C719B98856009E5D10 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		31A4F7C919B98863009E5D10 /* RequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
+		31A4F7CB19B9887A009E5D10 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		31FA7CD119B97E3900582E07 /* facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = facebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FA7CD419B97E3900582E07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		31FA7CD619B97E3900582E07 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -85,7 +93,11 @@
 		31FA7CC819B97E3900582E07 = {
 			isa = PBXGroup;
 			children = (
-				31A4F7C119B982D8009E5D10 /* NewsViewController.swift */,
+				31A4F7C319B98838009E5D10 /* FeedViewController.swift */,
+				31A4F7C519B98849009E5D10 /* MessagesViewController.swift */,
+				31A4F7C719B98856009E5D10 /* MoreViewController.swift */,
+				31A4F7C919B98863009E5D10 /* RequestsViewController.swift */,
+				31A4F7CB19B9887A009E5D10 /* NotificationsViewController.swift */,
 				31FA7CDA19B97E3900582E07 /* facebook */,
 				31FA7CF919B97E3900582E07 /* facebookTests */,
 				31FA7CD319B97E3900582E07 /* Frameworks */,
@@ -254,10 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31A4F7CA19B98863009E5D10 /* RequestsViewController.swift in Sources */,
+				31A4F7C619B98849009E5D10 /* MessagesViewController.swift in Sources */,
 				31FA7CEB19B97E3900582E07 /* ViewController.m in Sources */,
 				31FA7CE519B97E3900582E07 /* AppDelegate.m in Sources */,
+				31A4F7C819B98856009E5D10 /* MoreViewController.swift in Sources */,
+				31A4F7C419B98838009E5D10 /* FeedViewController.swift in Sources */,
 				31FA7CE119B97E3900582E07 /* main.m in Sources */,
-				31A4F7C219B982D8009E5D10 /* NewsViewController.swift in Sources */,
+				31A4F7CC19B9887A009E5D10 /* NotificationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
