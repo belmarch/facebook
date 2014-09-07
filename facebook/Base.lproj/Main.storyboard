@@ -80,17 +80,47 @@
                                             <action selector="onLikeButton:" destination="VFC-Wz-r1o" eventType="touchUpInside" id="CNi-C7-hN5"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4hH-FU-ONG">
+                                        <rect key="frame" x="113" y="362" width="86" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onCommentButton:" destination="VFC-Wz-r1o" eventType="touchUpInside" id="RkJ-c1-Ju1"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compose" id="Eyx-sM-4Dz">
-                                <rect key="frame" x="0.0" y="473" width="320" height="46"/>
+                            <view contentMode="scaleToFill" id="faf-MM-IbC">
+                                <rect key="frame" x="0.0" y="472" width="320" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment_bar" id="Eyx-sM-4Dz">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="9P9-yM-FOJ">
+                                        <rect key="frame" x="43" y="12" width="212" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Write a Comment" minimumFontSize="17" id="yTx-5j-gOU">
+                                        <rect key="frame" x="42" y="8" width="215" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="jw0-eh-peL"/>
                     <connections>
+                        <outlet property="commentContainer" destination="faf-MM-IbC" id="Fny-eE-WgQ"/>
+                        <outlet property="commentField" destination="yTx-5j-gOU" id="sEd-xe-BTW"/>
                         <outlet property="likeButton" destination="5bR-my-3Al" id="kZg-hg-8JS"/>
                         <outlet property="scrollView" destination="RJY-Kx-iR3" id="3Bz-KJ-195"/>
                     </connections>
@@ -388,7 +418,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2y-ua-htH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71" y="680"/>
+            <point key="canvasLocation" x="-64" y="989"/>
         </scene>
         <!--News Feed-->
         <scene sceneID="VXN-AW-3Sq">
@@ -501,6 +531,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="comment_bar" width="320" height="44"/>
         <image name="compose" width="320" height="46"/>
         <image name="create_checkin" width="320" height="568"/>
         <image name="create_photo" width="320" height="568"/>

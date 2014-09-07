@@ -12,9 +12,12 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var commentField: UITextField!
+    @IBOutlet weak var commentContainer: UIView!
     
     @IBAction func backButton(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+        navigationController.popViewControllerAnimated(true)
+
     }
     
     override func viewDidLoad() {
@@ -33,6 +36,13 @@ class DetailViewController: UIViewController {
         likeButton.selected = !likeButton.selected
     }
 
+    @IBAction func onCommentButton(sender: AnyObject) {
+        commentField.becomeFirstResponder()
+    }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
