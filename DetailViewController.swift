@@ -10,11 +10,15 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBAction func backButton(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func viewDidLoad() {
+        scrollView.contentSize = CGSize(width: 320, height: 1203)
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -25,6 +29,9 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onLikeButton(sender: AnyObject) {
+        likeButton.selected = !likeButton.selected
+    }
 
     /*
     // MARK: - Navigation
