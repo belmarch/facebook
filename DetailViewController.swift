@@ -10,13 +10,12 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBAction func backButton(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
     override func viewDidLoad() {
-        scrollView.contentSize = CGSize(width: 320, height: 1203)
         super.viewDidLoad()
-        
 
         // Do any additional setup after loading the view.
     }
@@ -27,8 +26,6 @@ class DetailViewController: UIViewController {
     }
     
 
-    
-    
     /*
     // MARK: - Navigation
 

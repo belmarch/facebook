@@ -1,5 +1,5 @@
 //
-//  DetailViewController.swift
+//  DetailsViewController.swift
 //  facebook
 //
 //  Created by Ron Belmarch on 9/6/14.
@@ -8,15 +8,10 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailsViewController: UIViewController {
 
-
-    @IBOutlet weak var scrollView: UIScrollView!
-    
     override func viewDidLoad() {
-        scrollView.contentSize = CGSize(width: 320, height: 1203)
         super.viewDidLoad()
-        
 
         // Do any additional setup after loading the view.
     }
@@ -27,8 +22,6 @@ class DetailViewController: UIViewController {
     }
     
 
-    
-    
     /*
     // MARK: - Navigation
 
