@@ -36,39 +36,29 @@
             <point key="canvasLocation" x="-71" y="1613"/>
         </scene>
         <!--Detail View Controller-->
-        <scene sceneID="PeP-31-ftL">
+        <scene sceneID="vvl-wg-LwT">
             <objects>
-                <viewController id="VFC-Wz-r1o" customClass="DetailViewController" customModule="facebook" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CpM-Vl-Oug">
+                <viewController id="aZo-TJ-Efx" customClass="DetailViewController" customModule="facebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kRA-Lf-xMu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_back" id="y0k-e5-17a">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_back" id="WkA-cc-tSQ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bkh-OP-jD3">
-                                <rect key="frame" x="8" y="29" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="backButton:" destination="VFC-Wz-r1o" eventType="touchUpInside" id="PJY-z5-Cpd"/>
-                                </connections>
-                            </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="RJY-Kx-iR3">
-                                <rect key="frame" x="0.0" y="64" width="320" height="412"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="zHE-HY-McL">
+                                <rect key="frame" x="0.0" y="63" width="328" height="457"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thrillist_detail" id="hCt-CS-e46">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="412"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thrillist_detail" id="OxH-CN-JCN">
+                                        <rect key="frame" x="-4" y="0.0" width="328" height="457"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5bR-my-3Al">
-                                        <rect key="frame" x="14" y="358" width="72" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vos-y7-YCp">
+                                        <rect key="frame" x="32" y="358" width="51" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <state key="normal" title="Like" image="like_btn">
                                             <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -77,57 +67,38 @@
                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="onLikeButton:" destination="VFC-Wz-r1o" eventType="touchUpInside" id="CNi-C7-hN5"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4hH-FU-ONG">
-                                        <rect key="frame" x="113" y="362" width="86" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onCommentButton:" destination="VFC-Wz-r1o" eventType="touchUpInside" id="RkJ-c1-Ju1"/>
+                                            <action selector="onLikeButton:" destination="aZo-TJ-Efx" eventType="touchUpInside" id="dAP-cc-OOt"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </scrollView>
-                            <view contentMode="scaleToFill" id="faf-MM-IbC">
-                                <rect key="frame" x="0.0" y="472" width="320" height="46"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment_bar" id="N83-f8-S8d">
+                                <rect key="frame" x="0.0" y="473" width="320" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment_bar" id="Eyx-sM-4Dz">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" id="9P9-yM-FOJ">
-                                        <rect key="frame" x="43" y="12" width="212" height="23"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Write a Comment" minimumFontSize="17" id="yTx-5j-gOU">
-                                        <rect key="frame" x="42" y="8" width="215" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TX4-oc-qx9">
+                                <rect key="frame" x="8" y="29" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="aZo-TJ-Efx" eventType="touchUpInside" id="M6c-yW-4kY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jw0-eh-peL"/>
+                    <navigationItem key="navigationItem" id="GE1-fb-JNe"/>
                     <connections>
-                        <outlet property="commentContainer" destination="faf-MM-IbC" id="Fny-eE-WgQ"/>
-                        <outlet property="commentField" destination="yTx-5j-gOU" id="sEd-xe-BTW"/>
-                        <outlet property="likeButton" destination="5bR-my-3Al" id="kZg-hg-8JS"/>
-                        <outlet property="scrollView" destination="RJY-Kx-iR3" id="3Bz-KJ-195"/>
+                        <outlet property="LikeButton" destination="Vos-y7-YCp" id="2gC-Q5-1J1"/>
+                        <outlet property="likeButton" destination="Vos-y7-YCp" id="89J-Wa-6TB"/>
+                        <outlet property="scrollView" destination="zHE-HY-McL" id="9dM-Jc-3ke"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tng-pE-1gY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7os-0h-uIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="2085"/>
+            <point key="canvasLocation" x="508" y="1896"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -156,7 +127,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="VFC-Wz-r1o" kind="push" id="KcE-j4-jG0"/>
+                                            <segue destination="aZo-TJ-Efx" kind="push" id="dyg-Fa-Dfe"/>
                                         </connections>
                                     </button>
                                 </subviews>

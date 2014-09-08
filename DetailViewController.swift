@@ -2,7 +2,7 @@
 //  DetailViewController.swift
 //  facebook
 //
-//  Created by Ron Belmarch on 9/6/14.
+//  Created by Ron Belmarch on 9/7/14.
 //  Copyright (c) 2014 Belmerica. All rights reserved.
 //
 
@@ -10,14 +10,12 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var commentField: UITextField!
-    @IBOutlet weak var commentContainer: UIView!
+    @IBOutlet weak var likeButton: UIButton!
+
     
     @IBAction func backButton(sender: AnyObject) {
         navigationController.popViewControllerAnimated(true)
-
     }
     
     override func viewDidLoad() {
@@ -31,18 +29,12 @@ class DetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     @IBAction func onLikeButton(sender: AnyObject) {
         likeButton.selected = !likeButton.selected
     }
+    
+    
 
-    @IBAction func onCommentButton(sender: AnyObject) {
-        commentField.becomeFirstResponder()
-    }
-    
-    
-    
-    
     /*
     // MARK: - Navigation
 
@@ -54,3 +46,5 @@ class DetailViewController: UIViewController {
     */
 
 }
+
+    
