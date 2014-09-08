@@ -19,4 +19,4 @@ Spent way too much time trying to figure out the bonus story (animating text ove
 
 Walkthrough of all user stories:
 
-http://i.imgur.com/jMPtHbY.gif
+img src (http://i.imgur.com/jMPtHbY.gif)
