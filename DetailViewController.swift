@@ -20,6 +20,8 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         scrollView.contentSize = CGSize(width: 320, height: 1203)
+        scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0)
+        //or use scrollView.contentSize = imageView.image!.size
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
